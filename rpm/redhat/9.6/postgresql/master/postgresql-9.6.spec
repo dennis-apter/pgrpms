@@ -539,6 +539,7 @@ export PYTHON=/usr/bin/python3
 	--with-pam \
 %endif
 %if %kerberos
+        --with-krb-srvnam=POSTGRES \
 	--with-gssapi \
 	--with-includes=%{kerbdir}/include \
 	--with-libraries=%{kerbdir}/%{_lib} \
